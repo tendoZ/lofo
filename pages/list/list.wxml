@@ -1,0 +1,25 @@
+<!--pages/list/list.wxml-->
+<wxs module="tutil" src="../../utils/data.wxs"></wxs>
+<view class="container">
+	<view class="widget">
+		<scroll-view scroll-y="true">
+			<view>
+				<block wx:for="{{list}}">
+					<view class="widget">
+						<view>
+							<text class="column">
+							{{item.areaName}}
+							{{tutil.formatTime(item.lastEditTime)}}
+							</text>
+              <view class="link-column">
+              <navigator class="link" url="../modify/modify?areaId={{item.areaId}}">修 改</navigator>
+              <text class="link" bindtap="deleteArea" data-areaid="{{item.areaId}}" data-areaname="{{item.areaName}}" data-index="{{index}}">删 除</text>
+            </view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+    <button type="primary" plain="true" bindtap="addArea">点击发布信息</button>
+	</view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/list/list.wxml-->
+<wxs module="tutil" src="../../utils/data.wxs"></wxs>
+<view class="container">
+	<view class="widget">
+		<scroll-view scroll-y="true">
+			<view>
+				<block wx:for="{{list}}">
+					<view class="widget">
+						<view>
+							<text class="column">
+							{{item.areaName}}
+							{{tutil.formatTime(item.lastEditTime)}}
+							</text>
+						</view>
+					</view>
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+</view>

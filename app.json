@@ -1,0 +1,39 @@
+{
+  "pages": [
+
+    "pages/welcome/welcome",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/operation/operation",
+    "pages/modify/modify",
+    "pages/add/add",
+    "pages/show/show"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#82b3bd",
+    "navigationBarTitleText": "校园失物招领",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#82b3bd",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/show/show",
+        "text": "失物招领",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "个人发布",
+        "iconPath": "images/tab/ciwei.png",
+        "selectedIconPath": "images/tab/ciwei_hl.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
